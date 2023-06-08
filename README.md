@@ -8,7 +8,13 @@ This OVMS plugin sends live telemetry data from the vehicle to ABRP to be used
 for the route planning process and appropriate updates to the plan along the way
 based on live information.
 
+This version is for the Kia Soul EV 30kWh.
+The SOH calculation is not correct in OVMS and leads to the wrong calculation of the reference consumption in ABRP.
+The SOH is replaced with a manually entered value. Currently only the KIA workshop and the SoulSpy app can read the SOH for the 30 kWh version.
+
 ## Installation
+Extra step for this version:
+Enter the correct SOH value in line 196 of the abrp.js file
 
 ### Obtain Live Data Token
 
